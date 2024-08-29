@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Color Variables */
+:root {
+  --secondary-font: #088178;
+  --primary-font: #1a1a1a;
+  --color-primary: #222;
+  --color-secondary: #465b52;
+  --color-background: #e3e6f3bd;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-highlight: #fddde4;
+  --color-border: #cce7d0;
+  --color-banner: #041e42;
+  --color-footer-link: #222;
+  --color-footer-hover: #088178;
+  --color-footer-icon: #465b52;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+  --color-primary: #e0e0e0;
+  --color-secondary: #b0b0b0;
+  --color-background: #1a1a1a;
+  --color-white: #000;
+  --color-black: #fff;
+  --color-highlight: #333;
+  --color-border: #555;
+  --color-banner: #111;
+  --color-footer-link: #e0e0e0;
+  --color-footer-hover: #088178;
+  --color-footer-icon: #b0b0b0;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h4, h6 {
+  color: var(--color-primary);
+}
+
+p {
+  color: var(--color-secondary);
+}
+
+button.normal {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+#header {
+  background: var(--color-background);
+}
+
+#navbar li a {
+  color: var(--primary-font);
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: var(--secondary-font);
+}
+
+#navbar li a.active::after,
+#navbar li a::after {
+  background: var(--secondary-font);
+}
+
+/* Home page */
+#hero {
+  background-color: var(--color-background);
+}
+
+#hero h1, #hero button {
+  color: var(--secondary-font);
+}
+
+#feature .fe-box {
+  border: 1px solid var(--color-border);
+}
+
+#feature .fe-box h6 {
+  background-color: var(--color-highlight);
+}
+
+#product1 .pro {
+  border: 1px solid var(--color-border);
+  color: var(--primary-font);
+}
+
+#product1 .pro .des h4 {
+  color: var(--secondary-font);
+}
+
+#banner {
+  background-color: var(--color-banner);
+}
+
+#banner h4, #banner h2, #banner button {
+  color: var(--color-white);
+}
+
+#newsletter {
+  background-color: var(--color-banner);
+}
+
+#newsletter h4, #newsletter p {
+  color: var(--color-white);
+}
+
+footer {
+  background-color: var(--color-background);
+}
+
+footer a {
+  color: var(--color-footer-link);
+}
+
+footer .follow i {
+  color: var(--color-footer-icon);
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: var(--color-footer-hover);
+}

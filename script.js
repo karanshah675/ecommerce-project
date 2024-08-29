@@ -13,3 +13,10 @@ if (close) {
         nav.classList.remove("active");
     })
 }
+const toggleDarkMode = () => {
+  const theme = document.documentElement.getAttribute("data-theme");
+  document.documentElement.setAttribute(
+    "data-theme",
+    theme === "dark" ? "light" : "dark"
+  );
+};
