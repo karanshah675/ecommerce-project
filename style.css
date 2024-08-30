@@ -2,32 +2,6 @@
 :root {
   --secondary-font: #088178;
   --primary-font: #1a1a1a;
-  --color-primary: #222;
-  --color-secondary: #465b52;
-  --color-background: #e3e6f3bd;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-highlight: #fddde4;
-  --color-border: #cce7d0;
-  --color-banner: #041e42;
-  --color-footer-link: #222;
-  --color-footer-hover: #088178;
-  --color-footer-icon: #465b52;
-}
-
-/* Dark Mode Colors */
-[data-theme="dark"] {
-  --color-primary: #e0e0e0;
-  --color-secondary: #b0b0b0;
-  --color-background: #1a1a1a;
-  --color-white: #000;
-  --color-black: #fff;
-  --color-highlight: #333;
-  --color-border: #555;
-  --color-banner: #111;
-  --color-footer-link: #e0e0e0;
-  --color-footer-hover: #088178;
-  --color-footer-icon: #b0b0b0;
 }
 
 * {
@@ -597,6 +571,8 @@ footer .copyright {
     transition: 1s ease-in-out;
     display: none;
   }
+
+
 
   #navbar.active {
     display: flex;
